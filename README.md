@@ -1,4 +1,4 @@
-# Ignition Setup Guide - Git Version Control for Ignition
+# Ignition Setup Guide - Git Version Control for Ignition 8.3
 
 **Version 1.0.0** | Last Updated: November 20, 2025
 
