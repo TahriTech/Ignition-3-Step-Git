@@ -1,4 +1,4 @@
-# Ignition 3-Step Git Version Control
+# Ignition 8.3 Easy Git Version Control 
 
 **Version 1.0.0** | Last Updated: November 20, 2025
 
