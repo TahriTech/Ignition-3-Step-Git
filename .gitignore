@@ -1,0 +1,84 @@
+# =============================================================================
+# .gitignore for Ignition 8.3
+# =============================================================================
+# 
+# This file tells Git what to save and what to ignore
+#
+# ✅ SAVED: Projects, configs, settings
+# ❌ IGNORED: Databases, logs, caches, licenses
+#
+# Place this file in the ROOT of your Ignition installation folder
+# Example: C:\Program Files\Inductive Automation\Ignition\.gitignore
+#
+# =============================================================================
+
+# Start by ignoring everything at the root
+/*
+
+# ===== WHAT WE SAVE (Important Stuff) =====
+
+# The data folder and everything in it
+!data/
+!/data/**
+
+# Version control scripts only
+!/.gitignore
+!/commit-changes-windows.bat
+!/commit-changes-linux-mac.sh
+!/IGNITION-SETUP.md
+
+# ===== WHAT WE DON'T SAVE (Auto-Generated or Sensitive) =====
+
+# Internal databases (large, auto-generated)
+data/db/
+data/datacache/
+data/metricsdb/
+
+# Caches and temporary files
+data/jar-cache/
+data/diagnostics/
+data/var/
+data/redundant_state/
+
+# Gateway backup files (large)
+data/*.gwbk
+data/__restore_disabled_*.gwbk
+
+# Module binaries (download these fresh)
+data/module-info/
+data/modules/*.modl
+
+# Security files (different per environment)
+data/opcua/security/
+data/certificates/
+data/config/opc-ua-certificates/
+*.lic
+*.license
+
+# ===== OPERATING SYSTEM FILES =====
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Mac
+.DS_Store
+._*
+
+# Linux
+*~
+
+# ===== EDITOR FILES =====
+
+.vscode/
+.idea/
+*.swp
+
+# ===== LOGS AND TEMP FILES =====
+
+*.log
+*.tmp
+*.bak
+*.cache
